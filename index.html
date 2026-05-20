@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenSquare Times Tables</title>
+  <meta name="description" content="Support and privacy information for GreenSquare Times Tables.">
+  <style>
+    :root {
+      --bg: #16161d;
+      --panel: #22222c;
+      --line: #343447;
+      --text: #f5f7fb;
+      --muted: #b4bad0;
+      --green: #00c853;
+      --orange: #ff6d00;
+      --blue: #4db4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(77, 180, 255, 0.14), transparent 30%),
+        linear-gradient(180deg, #171721 0%, #101015 100%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid rgba(77, 180, 255, 0.35);
+      border-radius: 999px;
+      color: var(--blue);
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.05;
+    }
+    p.lead {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0 0 28px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .card {
+      background: rgba(34, 34, 44, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+    .card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+    a.cta {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 2px solid var(--green);
+      padding-bottom: 2px;
+    }
+    .contact {
+      margin-top: 26px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+    .contact strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="badge">GreenSquare Times Tables</div>
+    <h1>Support and Privacy</h1>
+    <p class="lead">
+      GreenSquare Times Tables is an iPad educational app focused on multiplication practice,
+      local progress, and short, repeatable learning sessions.
+    </p>
+
+    <section class="grid" aria-label="Support links">
+      <article class="card">
+        <h2>Support</h2>
+        <p>Get help, report an issue, or send general product feedback.</p>
+        <a class="cta" href="support/">Open support page</a>
+      </article>
+
+      <article class="card">
+        <h2>Privacy Policy</h2>
+        <p>Read how GreenSquare Times Tables handles local data and user privacy.</p>
+        <a class="cta" href="privacy/">Open privacy policy</a>
+      </article>
+    </section>
+
+    <section class="contact" aria-label="Developer contact">
+      <p><strong>Developer:</strong> David Ramsay</p>
+      <p><strong>Email:</strong> <a class="cta" href="mailto:david.jp.ramsay@me.com">david.jp.ramsay@me.com</a></p>
+      <p><strong>Phone:</strong> <a class="cta" href="tel:+61414955784">+61 414 955 784</a></p>
+    </section>
+  </main>
+</body>
+</html>
